@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area{
+            height: 200px;
+            width: 200px;
+
+            border-radius: 8px;
+
+            color: white;
+            font: normal 1.3em Arial;
+            line-height: 200px;
+            text-align: center;
+
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="area">
+        Intereaja...
+    </div>
+
+    <!-- onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" --> 
+
+    <script>
+        area.addEventListener("click", clicar)
+        area.addEventListener("mouseenter", entrar)
+        area.addEventListener("mouseout", sair)
+
+        function clicar(){
+            let area = document.querySelector("div#area")
+            area.innerText = "Clicou!"
+            area.style.background = "red"
+        }
+
+        function entrar(){
+
+            area.innerText = "Entrou!"
+        }
+
+        function sair(){
+
+            area.innerText = "Saiu!"
+        }
+    </script>
+</body>
+</html>
