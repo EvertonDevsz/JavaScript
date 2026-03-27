@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: white;
+            font: normal 1.1em Arial;
+            background-color: rgb(113, 113, 207);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Iniciando estudos com <strong>DOM</strong></h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        let p1 = document.getElementsByTagName("p")[1]
+
+        let d = document.getElementById("msg")
+
+        let a = document.querySelector("h1.titulo")
+        document.write(a.innerHTML)
+    </script>
+</body>
+</html>
