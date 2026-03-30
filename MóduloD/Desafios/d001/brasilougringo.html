@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Brasileiro ou Gringo</h1>
+
+    <label for="pais">Em que pais você mora:</label>
+    <input type="text" name="pais" id="pais" autocomplete="off" >
+
+    <input type="button" value="Enviar" onclick="nac()">
+    
+    <div id="nacional"></div>
+
+    <script>
+        function nac(){
+            let braougrin = document.querySelector("input#pais").value
+
+            if(braougrin == "Brasil"){
+                document.querySelector("div#nacional").innerHTML = "<p>Você é Brasileiro.</p>"
+            } else{
+                document.querySelector("div#nacional").innerHTML = "<p>Você é gringo</p>"
+            }
+        }
+    </script>
+</body>
+</html>
