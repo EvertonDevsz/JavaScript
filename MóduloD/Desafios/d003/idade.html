@@ -3,34 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Idade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Verificador de Idade</h1>
     </header>
 
     <section>
         <div id="dados">
             <p>
-                <label for="txt">Ano de nascimento:</label>
-                <input type="number" name="txt" id="txt">
+                <label for="anonas">Ano de nascimento:</label>
+                <input id="anonas" type="number" name="txt" value="0">
             </p>
 
             <p>
                 Sexo:
 
-                <input type="radio" name="sx" id="sxmas">
+                <input type="radio" name="sx" id="sxmas" checked>
                 <label for="sxmas">Masculino </label>
 
                 <input type="radio" name="sx" id="sxfem">
-                <label for="sxfem">Feminino</label>
+                <label for="sxfem">Feminino</label >
             </p>
+
+            <input type="button" value="Verificar" onclick="verifAge()">
         </div>
 
 
-        <div></div>
+        <div id="res">Preenca os dados acima para ver o resultado</div>
     </section>
 
     <footer>
