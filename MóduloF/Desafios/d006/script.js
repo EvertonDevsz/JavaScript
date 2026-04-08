@@ -19,6 +19,9 @@ function adicionar(){
         document.querySelector("select#show").append(option)
        
     }
+    
+    valornum.value = ""
+    valornum.focus()
 }
 
 //analisar e mostrar calculos
